@@ -2,6 +2,8 @@
 
 AurionX is a modern cybersecurity web application that detects, analyzes, and explains cyber threats using AI/ML models. It features a dark futuristic UI with glassmorphism design, neon accents, and a professional layout.
 
+link :- https://preview--aurionx-guard.lovable.app/
+
 ---
 
 ## 📁 Project Structure
