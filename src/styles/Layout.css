@@ -1,0 +1,133 @@
+.layout-wrapper {
+  min-height: 100vh;
+  background-color: #0a0e17;
+  background-image:
+    linear-gradient(rgba(0, 210, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 210, 255, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.layout-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  background: rgba(14, 18, 30, 0.85);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+  padding: 0 24px;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-icon {
+  width: 28px;
+  height: 28px;
+  color: #00d2ff;
+}
+
+.logo-text {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #00d2ff;
+  letter-spacing: 3px;
+  text-shadow: 0 0 10px rgba(0, 210, 255, 0.5), 0 0 30px rgba(0, 210, 255, 0.2);
+}
+
+.desktop-nav {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #6b7b8d;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: #c8d6e5;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.nav-link.active {
+  color: #00d2ff;
+  background: rgba(0, 210, 255, 0.1);
+}
+
+.nav-link-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.mobile-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #c8d6e5;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.mobile-nav {
+  display: none;
+  padding: 16px;
+  background: rgba(14, 18, 30, 0.95);
+  backdrop-filter: blur(20px);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.mobile-nav-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #6b7b8d;
+  transition: all 0.2s ease;
+}
+
+.mobile-nav-link.active {
+  color: #00d2ff;
+  background: rgba(0, 210, 255, 0.1);
+}
+
+.layout-main {
+  padding-top: 64px;
+}
+
+@media (max-width: 768px) {
+  .desktop-nav {
+    display: none;
+  }
+  .mobile-toggle {
+    display: block;
+  }
+  .mobile-nav.open {
+    display: block;
+  }
+}
